@@ -1,11 +1,7 @@
-#!groovy
-pipeline {
-	agent none
-        stages {
-  	        stage('Maven Install') {
+node {
+  	        stage('Build') {
     	                withMaven {
       	                        sh 'mvn clean install'
                         }
                 }
-        }
 }
