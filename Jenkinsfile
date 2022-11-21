@@ -13,7 +13,7 @@ pipeline {
     stage('Docker Build') {
     	agent any
       steps {
-      	sh 'docker build -t mndillon/spring-petclinic:latest .'
+      	sh 'docker build -t mndillon/spring-petclinic:2.7.3 .'
       }
     }
   }
